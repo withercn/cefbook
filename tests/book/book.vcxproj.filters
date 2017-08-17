@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="html">
+      <UniqueIdentifier>{e09d80d6-c18f-4eb4-9665-31b8ae29c174}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="html\js">
+      <UniqueIdentifier>{aa141f8d-d2da-4204-9f58-041fc764c1e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="html\img">
+      <UniqueIdentifier>{51d72ec8-eeb0-431d-81b9-d3854355efac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="html\css">
+      <UniqueIdentifier>{c035fbb2-2f5d-431f-ab80-24005051dbaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="html\css\blitzer">
+      <UniqueIdentifier>{327e9261-72b5-4e23-aa17-d9c46c76ae49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="html\css\blitzer\images">
+      <UniqueIdentifier>{cdc43461-d3ed-476b-9a32-25b59bdbe8aa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="html\index.html">
+      <Filter>html</Filter>
+    </None>
+    <None Include="html\js\app.js">
+      <Filter>html\js</Filter>
+    </None>
+    <None Include="html\js\bootstrap.min.js">
+      <Filter>html\js</Filter>
+    </None>
+    <None Include="html\js\jquery-1.8.2.min.js">
+      <Filter>html\js</Filter>
+    </None>
+    <None Include="html\js\jquery-ui-1.9.0.custom.min.js">
+      <Filter>html\js</Filter>
+    </None>
+    <None Include="html\css\app.css">
+      <Filter>html\css</Filter>
+    </None>
+    <None Include="html\css\bootstrap.min.css">
+      <Filter>html\css</Filter>
+    </None>
+    <None Include="html\css\blitzer\jquery-ui-1.9.0.custom.min.css">
+      <Filter>html\css\blitzer</Filter>
+    </None>
+    <None Include="Independente\html\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="html\img\glyphicons-halflings.png">
+      <Filter>html\img</Filter>
+    </Image>
+    <Image Include="html\img\glyphicons-halflings-white.png">
+      <Filter>html\img</Filter>
+    </Image>
+    <Image Include="html\css\blitzer\images\ui-bg_diagonals-thick_75_f3d8d8_40x40.png">
+      <Filter>html\css\blitzer\images</Filter>
+    </Image>
+    <Image Include="html\css\blitzer\images\ui-bg_dots-small_65_a6a6a6_2x2.png">
+      <Filter>html\css\blitzer\images</Filter>
+    </Image>
+    <Image Include="html\css\blitzer\images\ui-bg_flat_0_333333_40x100.png">
+      <Filter>html\css\blitzer\images</Filter>
+    </Image>
+    <Image Include="html\css\blitzer\images\ui-bg_flat_65_ffffff_40x100.png">
+      <Filter>html\css\blitzer\images</Filter>
+    </Image>
+    <Image Include="html\css\blitzer\images\ui-bg_flat_75_ffffff_40x100.png">
+      <Filter>html\css\blitzer\images</Filter>
+    </Image>
+    <Image Include="html\css\blitzer\images\ui-bg_glass_55_fbf8ee_1x400.png">
+      <Filter>html\css\blitzer\images</Filter>
+    </Image>
+    <Image Include="html\css\blitzer\images\ui-bg_highlight-hard_100_eeeeee_1x100.png">
+      <Filter>html\css\blitzer\images</Filter>
+    </Image>
+    <Image Include="html\css\blitzer\images\ui-bg_highlight-hard_100_f6f6f6_1x100.png">
+      <Filter>html\css\blitzer\images</Filter>
+    </Image>
+    <Image Include="html\css\blitzer\images\ui-bg_highlight-soft_15_cc0000_1x100.png">
+      <Filter>html\css\blitzer\images</Filter>
+    </Image>
+    <Image Include="html\css\blitzer\images\ui-icons_004276_256x240.png">
+      <Filter>html\css\blitzer\images</Filter>
+    </Image>
+    <Image Include="html\css\blitzer\images\ui-icons_cc0000_256x240.png">
+      <Filter>html\css\blitzer\images</Filter>
+    </Image>
+    <Image Include="html\css\blitzer\images\ui-icons_ffffff_256x240.png">
+      <Filter>html\css\blitzer\images</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Independente\ClientApp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Independente\ClientHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Independente\ClientV8ExtensionHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Independente\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Independente\ClientApp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Independente\ClientHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Independente\ClientV8ExtensionHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

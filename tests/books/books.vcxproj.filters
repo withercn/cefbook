@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="html">
+      <UniqueIdentifier>{e09d80d6-c18f-4eb4-9665-31b8ae29c174}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="html\css">
+      <UniqueIdentifier>{256000b2-cf35-48c8-9ad7-f700a949bb98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="html\img">
+      <UniqueIdentifier>{7ae37abd-002d-4b6a-9081-a821c1dd21f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="html\js">
+      <UniqueIdentifier>{5eec8ff3-62c5-481b-83c3-542bb972fa3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Window">
+      <UniqueIdentifier>{b3dccae4-0924-45e8-873f-9b31756b3983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Types">
+      <UniqueIdentifier>{055a1a05-4578-47d2-a58a-efec7ba28bc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AppConfig">
+      <UniqueIdentifier>{77e1d5ce-59aa-4f33-9a1c-6ad452b18f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="html\model">
+      <UniqueIdentifier>{2a9aa057-0ccc-49b5-beca-0dcaa1fa3c75}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clientApp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="clientHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientV8ExtensionHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="baseWindow.h">
+      <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="clientScheme.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="typeMime.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="clientCookie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SqliteHelper.h">
+      <Filter>AppConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="AppConfig.h">
+      <Filter>AppConfig</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="clientApp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="clientHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="index_Win.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientV8ExtensionHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="baseWindow.cpp">
+      <Filter>Window</Filter>
+    </ClCompile>
+    <ClCompile Include="clientScheme.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AppConfig.cpp">
+      <Filter>AppConfig</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\spider\Server\public\images\close_down.gif">
+      <Filter>html\img</Filter>
+    </Image>
+    <Image Include="..\..\..\spider\Server\public\images\close_up.gif">
+      <Filter>html\img</Filter>
+    </Image>
+    <Image Include="..\..\..\spider\Server\public\images\search.png">
+      <Filter>html\img</Filter>
+    </Image>
+    <Image Include="..\..\..\spider\Server\public\images\search_hover.png">
+      <Filter>html\img</Filter>
+    </Image>
+    <Image Include="Debug\html\img\logo.png">
+      <Filter>html\img</Filter>
+    </Image>
+    <Image Include="resource\logos.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug\html\index.html">
+      <Filter>html</Filter>
+    </None>
+    <None Include="Debug\html\js\global.js">
+      <Filter>html\js</Filter>
+    </None>
+    <None Include="Debug\html\css\global.css">
+      <Filter>html\css</Filter>
+    </None>
+    <None Include="Debug\html\js\jquery-1.8.2.min.js">
+      <Filter>html\js</Filter>
+    </None>
+    <None Include="Debug\html\js\jquery-3.2.1.min.js">
+      <Filter>html\js</Filter>
+    </None>
+    <None Include="Debug\html\js\msgbox.js">
+      <Filter>html\js</Filter>
+    </None>
+    <None Include="Debug\html\tray.html">
+      <Filter>html</Filter>
+    </None>
+    <None Include="Debug\html\model\index.html">
+      <Filter>html\model</Filter>
+    </None>
+    <None Include="Debug\html\model\mail.html">
+      <Filter>html\model</Filter>
+    </None>
+    <None Include="Debug\html\model\setting.html">
+      <Filter>html\model</Filter>
+    </None>
+    <None Include="Debug\html\model\skin.html">
+      <Filter>html\model</Filter>
+    </None>
+    <None Include="Debug\html\js\scroll.js">
+      <Filter>html\js</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="books1.rc" />
+  </ItemGroup>
+</Project>

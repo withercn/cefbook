@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{7B0ECDF6-12B5-422B-BA6E-B97FD6939A94}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>book</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\VisualStudio\Projeccts\chrome\tests\books\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">book.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">books</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\VisualStudio\Projeccts\chrome\tests\books\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">book.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">book</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\VisualStudio\Projeccts\chrome;D:\VisualStudio\Projeccts\chrome\sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4481;4512;4701;4702;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\VisualStudio\Projeccts\chrome;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\VisualStudio\Projeccts\chrome;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Adding manifest...															</Message>
+      <Command>
+        mt.exe -nologo -manifest "D:/VisualStudio/Projeccts/chrome/tests/books/books.exe.manifest" "D:/VisualStudio/Projeccts/chrome/tests/books/compatibility.manifest" -outputresource:"D:/VisualStudio/Projeccts/chrome/tests/books/Debug/books.exe";#1
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Debug/chrome_elf.dll D:/VisualStudio/Projeccts/chrome/tests/books/Debug/chrome_elf.dll
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Debug/d3dcompiler_43.dll D:/VisualStudio/Projeccts/chrome/tests/books/Debug/d3dcompiler_43.dll
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Debug/d3dcompiler_47.dll D:/VisualStudio/Projeccts/chrome/tests/books/Debug/d3dcompiler_47.dll
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Debug/libcef.dll D:/VisualStudio/Projeccts/chrome/tests/books/Debug/libcef.dll
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Debug/libEGL.dll D:/VisualStudio/Projeccts/chrome/tests/books/Debug/libEGL.dll
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Debug/libGLESv2.dll D:/VisualStudio/Projeccts/chrome/tests/books/Debug/libGLESv2.dll
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Debug/natives_blob.bin D:/VisualStudio/Projeccts/chrome/tests/books/Debug/natives_blob.bin
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Debug/snapshot_blob.bin D:/VisualStudio/Projeccts/chrome/tests/books/Debug/snapshot_blob.bin
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Resources/cef.pak D:/VisualStudio/Projeccts/chrome/tests/books/Debug/cef.pak
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Resources/cef_100_percent.pak D:/VisualStudio/Projeccts/chrome/tests/books/Debug/cef_100_percent.pak
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Resources/cef_200_percent.pak D:/VisualStudio/Projeccts/chrome/tests/books/Debug/cef_200_percent.pak
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Resources/cef_extensions.pak D:/VisualStudio/Projeccts/chrome/tests/books/Debug/cef_extensions.pak
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Resources/devtools_resources.pak D:/VisualStudio/Projeccts/chrome/tests/books/Debug/devtools_resources.pak
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Resources/icudtl.dat D:/VisualStudio/Projeccts/chrome/tests/books/Debug/icudtl.dat
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_directory D:/VisualStudio/Projeccts/chrome/Resources/locales D:/VisualStudio/Projeccts/chrome/tests/books/Debug/locales
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\Debug\libcef.lib;..\..\libcef_dll_wrapper\Debug\libcef_dll_wrapper.lib;..\..\Debug\sqlite3.lib;comctl32.lib;rpcrt4.lib;shlwapi.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/VisualStudio/Projeccts/chrome/tests/books/Debug/books.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>D:/VisualStudio/Projeccts/chrome/tests/books/Debug/books.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>D:\VisualStudio\Projeccts\chrome\tests\books\books.exe.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\VisualStudio\Projeccts\chrome;D:\VisualStudio\Projeccts\chrome\sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4481;4512;4701;4702;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;_NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;_NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\VisualStudio\Projeccts\chrome;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\VisualStudio\Projeccts\chrome;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Adding manifest...															</Message>
+      <Command>
+        mt.exe -nologo -manifest "D:/VisualStudio/Projeccts/chrome/tests/books/books.exe.manifest" "D:/VisualStudio/Projeccts/chrome/tests/books/compatibility.manifest" -outputresource:"D:/VisualStudio/Projeccts/chrome/tests/books/Release/book.exe";#1
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Release/chrome_elf.dll D:/VisualStudio/Projeccts/chrome/tests/books/Release/chrome_elf.dll
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Release/d3dcompiler_43.dll D:/VisualStudio/Projeccts/chrome/tests/books/Release/d3dcompiler_43.dll
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Release/d3dcompiler_47.dll D:/VisualStudio/Projeccts/chrome/tests/books/Release/d3dcompiler_47.dll
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Release/libcef.dll D:/VisualStudio/Projeccts/chrome/tests/books/Release/libcef.dll
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Release/libEGL.dll D:/VisualStudio/Projeccts/chrome/tests/books/Release/libEGL.dll
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Release/libGLESv2.dll D:/VisualStudio/Projeccts/chrome/tests/books/Release/libGLESv2.dll
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Release/natives_blob.bin D:/VisualStudio/Projeccts/chrome/tests/books/Release/natives_blob.bin
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Release/snapshot_blob.bin D:/VisualStudio/Projeccts/chrome/tests/books/Release/snapshot_blob.bin
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Resources/cef.pak D:/VisualStudio/Projeccts/chrome/tests/books/Release/cef.pak
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Resources/cef_100_percent.pak D:/VisualStudio/Projeccts/chrome/tests/books/Release/cef_100_percent.pak
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Resources/cef_200_percent.pak D:/VisualStudio/Projeccts/chrome/tests/books/Release/cef_200_percent.pak
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Resources/cef_extensions.pak D:/VisualStudio/Projeccts/chrome/tests/books/Release/cef_extensions.pak
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Resources/devtools_resources.pak D:/VisualStudio/Projeccts/chrome/tests/books/Release/devtools_resources.pak
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_if_different D:/VisualStudio/Projeccts/chrome/Resources/icudtl.dat D:/VisualStudio/Projeccts/chrome/tests/books/Release/icudtl.dat
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+        setlocal
+        D:\cmake-3.9.0-win64-x64\bin\cmake.exe -E copy_directory D:/VisualStudio/Projeccts/chrome/Resources/locales D:/VisualStudio/Projeccts/chrome/tests/books/Release/locales
+        if %errorlevel% neq 0 goto :cmEnd
+        :cmEnd
+        endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+        :cmErrorLevel
+        exit /b %1
+        :cmDone
+        if %errorlevel% neq 0 goto :VCEnd
+      </Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\Release\libcef.lib;..\..\libcef_dll_wrapper\Release\libcef_dll_wrapper.lib;..\..\Release\sqlite3.lib;comctl32.lib;rpcrt4.lib;shlwapi.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/VisualStudio/Projeccts/chrome/tests/books/Release/books.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>D:/VisualStudio/Projeccts/chrome/tests/books/Release/books.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>D:\VisualStudio\Projeccts\chrome\tests\book\book.exe.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\VisualStudio\Projeccts\chrome\ZERO_CHECK.vcxproj">
+      <Project>{C70610EF-1495-3605-9573-F77A69730CBC}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\VisualStudio\Projeccts\chrome\libcef_dll_wrapper\libcef_dll_wrapper.vcxproj">
+      <Project>{AC647E1F-86EC-3D9A-93CE-D6607B02F260}</Project>
+      <Name>libcef_dll_wrapper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppConfig.h" />
+    <ClInclude Include="baseWindow.h" />
+    <ClInclude Include="clientApp.h" />
+    <ClInclude Include="clientCookie.h" />
+    <ClInclude Include="clientHandler.h" />
+    <ClInclude Include="clientScheme.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SqliteHelper.h" />
+    <ClInclude Include="typeMime.h" />
+    <ClInclude Include="ClientV8ExtensionHandler.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppConfig.cpp" />
+    <ClCompile Include="baseWindow.cpp" />
+    <ClCompile Include="clientApp.cpp" />
+    <ClCompile Include="clientHandler.cpp" />
+    <ClCompile Include="clientScheme.cpp" />
+    <ClCompile Include="ClientV8ExtensionHandler.cpp" />
+    <ClCompile Include="index_Win.cpp" />
+    <ClCompile Include="Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\spider\Server\public\images\close_down.gif" />
+    <Image Include="..\..\..\spider\Server\public\images\close_up.gif" />
+    <Image Include="..\..\..\spider\Server\public\images\search.png" />
+    <Image Include="..\..\..\spider\Server\public\images\search_hover.png" />
+    <Image Include="Debug\html\img\logo.png" />
+    <Image Include="resource\logos.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug\html\css\global.css" />
+    <None Include="Debug\html\index.html" />
+    <None Include="Debug\html\js\global.js" />
+    <None Include="Debug\html\js\jquery-1.8.2.min.js" />
+    <None Include="Debug\html\js\jquery-3.2.1.min.js" />
+    <None Include="Debug\html\js\msgbox.js" />
+    <None Include="Debug\html\js\scroll.js" />
+    <None Include="Debug\html\model\index.html" />
+    <None Include="Debug\html\model\mail.html" />
+    <None Include="Debug\html\model\setting.html" />
+    <None Include="Debug\html\model\skin.html" />
+    <None Include="Debug\html\tray.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="books1.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

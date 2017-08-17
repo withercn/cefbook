@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\VisualStudio\Projeccts\chrome\tests\gtest\src\gtest-all.cc">
+      <Filter>cef_gtest</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\VisualStudio\Projeccts\chrome\tests\gtest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cef_gtest">
+      <UniqueIdentifier>{47C71A1C-8A11-3ACA-A544-29F42396BCCD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
